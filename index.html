@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1a324c">
+    <meta name="msapplication-navbutton-color" content="#1a324c">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description"
+      content="Hi, I'm Ayanna H i am a self taught front-end developer">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="apple-touch-icon" href="img/himynameis" />
+    <link rel="icon" href="img/himynameis" />
+    <link rel="icon"  href="img/himynameis" />
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+</style>" />
+
+<title>Ayanna Hawkins a self taught front-end developer</title>
+</head>
+
+<body>
+ <header>
+   <div class="fixed-header animate-background">
+     <div class="container header-container">
+       <div class="logo-container">
+         <span class="logo animate-logo">Ayanna Hawkins :)</span>
+       </div>
+       <div class="header-text">
+         <h1>
+           <p class="animate-text-1">Self-taught Front End Developer,</p>
+           <p class="animate-text-2">Pharmacy Tech of 5 years</p>
+         </h1>
+       </div>
+       <h2 class="animate-subtitle">
+         I have a passion for building websites and learning new ways to bring new trends to viewers.
+       </h2>
+       <div class="scroll-button animate-scroll" tabindex="0">
+         <div class="arrow">↓</div> scroll
+       </div>
+     </div>
+   </div>
+ </header>
+ <nav>
+   <div class="container">
+     <a href="/" class="nav-logo" title="Home">
+       Ayanna Hawkins
+     </a>
+     <div class="nav-links">
+       <a href="home" class="link">home</a>
+       <a href="about" class="link">about me</a>
+       <a href="projects" class="link">projects</a>
+       <a href="contact" class="link">contact me</a>
+       <div class="social-media">
+         <a href="https://github.com/AyannaRenee" title="Github">
+           <i class="demo-icon icon-github-circled"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/ayanna-hawkins-332497159" title="LinkedIn">
+           <i class="demo-icon icon-linkedin"></i>
+         </a>
+       </div>
+     </div>
+     <div class="nav-controls">
+       <button id="menu-display" title="Show Menu" class="hamburger"></button>
+       <button id="theme-display" title="Select a color scheme" class="control">
+         <i class="demo-icon icon-cog"></i>
+       </button>
+     </div>
+     <div class="theme-container">
+       <button class="light theme-select" id="light-select" onclick="setTheme('light')" aria-label="Set light theme">
+         <div class="theme-label">
+           Light
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+       <button class="dark theme-select" id="dark-select" onclick="setTheme('dark')"
+         onkeydown="(e) => setThemeKey(e, 'dark')" aria-label="Set dark theme">
+         <div class="theme-label">
+           Dark
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+       <button class="brown theme-select" id="brown-select" onclick="setTheme('brown')" aria-label="Set brown theme">
+         <div class="theme-label">
+           Brown
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+       <button class="green theme-select" id="green-select" onclick="setTheme('green')" aria-label="Set green theme">
+         <div class="theme-label">
+           Green
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+       <button class="pink theme-select" id="pink-select" onclick="setTheme('pink')" aria-label="Set pink theme">
+         <div class="theme-label">
+           Pink
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+       <button class="neon theme-select" id="neon-select" onclick="setTheme('neon')" aria-label="Set pink theme">
+         <div class="theme-label">
+           Neon
+         </div>
+         <div class="theme">
+           <div class="color background"></div>
+           <div class="color shade-100"></div>
+           <div class="color shade-300"></div>
+           <div class="color shade-500"></div>
+           <div class="color text"></div>
+         </div>
+       </button>
+     </div>
+   </div>
+ </nav>
+ <main>
+   <section id="about">
+     <div class="container inner-container">
+       <div class="intro scroll-in">
+         <h2 class="section-title"> Hi, Im Ayana Hawkins :) <span class="title-icon">&#128578;</span></h2>
+         <div class="section-subtitle">
+           <p> I’m a self-taught Front End Developer and school based pharmacy tech of 5 years.</p>
+           <p>
+             Since <a href="about#history"> 2016, I have been building websites </a> with various platforms,
+             for the last 6 months I have been teaching my self front-end development and the fundementals of Ux/UI design to understand user's needs better..</p>
+           <p>
+             So far I have taught myself 4 languages: <a href="talks"> HTML, CSS, Javascript(React j.s & Vanilla javascript), and Python.</a> I am currently looking
+             for a front-end dev position, with hopes of growing with a company while furthering my self taught journey in order to become a full stack dev.
+           </p>
+         </div>
+       </div>
+     </div>
+   </section>
+   <div class="wave-border top">
+     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+       <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+         style="stroke: none; fill: var(--shade-100)"></path>
+       <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+         style="stroke: var(--neon-color);fill: none;"></path>
+     </svg>
+   </div>
+   <section id="projects">
+     <div class="container">
+       <div class="title-container scroll-in">
+         <h2 class="section-title">My Projects <span class="title-icon">&#128187;</span></h2>
+         <p class="section-subtitle">
+           Here are some of my own self directed projects.
+         </p>
+       </div>
+       <div class="project-container">
+         <div class="project scroll-in">
+           <div class="project-image">
+             <img src="#" alt="Memory game">
+             <!-- IDEA:  enter memory game info -->
+
+           </div>
+           <div class="project-content-container">
+             <div class="project-content">
+               <h3 class="project-title">
+                 <a href="memory game " target="_blank" rel="noopener"> Memory game </a>
+               </h3>
+               <div class="project-description">
+                 <p> This is a self directed project that i built using HTML, CSS and Javascript.</p>
+                 <!-- IDEA:
+
+
+this space above is for memory game only
+
+
+                -->
+               </div>
+               <ul class="project-tags" title="languages used">
+                 <li class="tag">Javascript</li>
+                 <li class="tag">CSS</li>
+                 <li class="tag">HTML</li>
+               </ul>
+               <div class="project-links">
+                 <a href="memory game" target="_blank" rel="noopener" class="link-btn">visit site</a>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="project scroll-in">
+           <div class="project-image">
+             <img src="portfolio" width="720" height="340"
+               alt="portfolio">
+           </div>
+           <div class="project-content-container">
+             <div class="project-content">
+               <h3 class="project-title">
+                 <a href="portfolio" target="_blank" rel="noopener">
+                   portfolio
+                 </a>
+               </h3>
+               <div class="project-description">
+                 <p>
+              My second project is my portfolio. I built this site with HTML, CSS and Javascript.
+                 </p>
+
+               </div>
+               <ul class="project-tags">
+                 <li class="tag">HTML</li>
+                 <li class="tag">CSS</li>
+                 <li class="tag">JavaScript</li>
+               </ul>
+               <div class="project-links">
+                 <a href="project" target="_blank" rel="noopener"
+                   class="link-btn">Visit Site</a>
+                   <!-- IDEA:
+
+
+Portfolio enter all info please
+
+
+                  -->
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="project scroll-in">
+           <div class="project-image">
+             <img src="Last project"
+               alt="last project">
+           </div>
+           <div class="project-content-container">
+             <div class="project-content">
+               <h3 class="project-title">
+                 last project
+               </h3>
+               <div class="project-description">
+                 <p>
+                  last project idk what it is yet
+                 </p>
+              <!-- IDEA:
+
+last project
+
+
+             -->
+               </div>
+               <ul class="project-tags">
+                 <li class="tag">HTML</li>
+                 <li class="tag">CSS</li>
+                 <li class="tag">JavaScript</li>
+               </ul>
+               <div class="project-links">
+                 <a href="last project" target="_blank" rel="noopener" class="link-btn">View project</a>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="section-link scroll-in">
+         <a href="projects" class="link-btn">View All Projects</a>
+       </div>
+     </div>
+   </section>
+   <div class="wave-border bottom">
+     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+       <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+         style="stroke: none; fill: var(--shade-100);"></path>
+       <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+         style="stroke: var(--neon-color); fill: none;"></path>
+     </svg>
+   </div>
+   <div class="wave-border top">
+     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+       <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+         style="stroke: none; fill: var(--shade-100)"></path>
+       <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+         style="stroke: var(--neon-color);fill: none;"></path>
+     </svg>
+   </div>
+
+   <div class="wave-border bottom">
+     <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+       <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+         style="stroke: none; fill: var(--shade-100);"></path>
+       <path class="neon-path" d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+         style="stroke: var(--neon-color); fill: none;"></path>
+     </svg>
+   </div>
+   <section id="contact">
+     <div class="container">
+       <div class="title-container scroll-in">
+         <h2 class="section-title">Contact Me <span class="title-icon">&#128231;</span></h2>
+         <p class="section-subtitle">
+           Do you like my porfolio? I really hope yu do! If you have any availble job opportunities that I am qualified for please contect me down below :)
+         </p>
+       </div>
+       <div class="contact-content">
+         <div class="form-container scroll-in">
+           <noscript>This form won't work without JavaScript but you can send me a message on
+              <a href="https://www.linkedin.com/in/jemimaabu"
+               style="text-decoration: underline;">LinkedIn</a>. </noscript>
+           <p class="success-message"></p>
+           <form name='contact' method='POST' action='/?success#contact'><input type='hidden' name='form-name' value='contact' />
+             <div class="input-container">
+               <input type="text" id="name" name="name" required class="form-input" />
+               <label for="name">Name:</label>
+             </div>
+             <div class="input-container">
+               <input type="email" id="email" name="email" required class="form-input" />
+               <label for="email">Email:</label>
+             </div>
+             <div class="input-container">
+               <input type="text" id="subject" name="subject" class="form-input" />
+               <label for="subject">Subject (optional):</label>
+             </div>
+             <div class="input-container">
+               <textarea required maxlength="1000" id="message" name="message" class="form-input"></textarea>
+               <label for="message">Message:<br> </label>
+               <small>
+                 <span id="message-count">1000</span> characters
+               </small>
+             </div>
+             <div>
+               <button type="submit" class="link-btn">Send</button>
+             </div>
+           </form>
+         </div>
+         <div class="links-container scroll-in">
+           <h3>Other links:</h3>
+           <ul>
+
+             <li>
+               <a href="link to resume aslo add button"
+                 class="contact-link">download my
+                 resume</a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </section>
+ </main>
+ <div class="wave-border top">
+   <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+     <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+       style="stroke: none; fill: var(--shade-100)"></path>
+     <path class="neon-path" d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+       style="stroke: var(--neon-color);fill: none;"></path>
+   </svg>
+ </div>
+ <footer>
+
+   <div class="container">
+     <div class="social-media">
+
+    <!-- add links  -->
+     </div>
+   </div>
+ </footer>
+</body>
+<!--  add java  -->
+<script src=" java "></script>
+<script src="java "></script>
+
+</html>
