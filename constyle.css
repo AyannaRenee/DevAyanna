@@ -187,7 +187,7 @@ img {
 .glass-panel { color: #fff; margin: 40px auto;
   background-color: rgba(255,255,255,0.06);
    border: 6px blur rgba(255,255,255,0.5);
-    width: 70%; border-radius: 15px; padding:
+    width: 50%; border-radius: 15px; padding:
      32px; backdrop-filter: blur(10px);
     }
 
@@ -288,3 +288,77 @@ p {
     .footer {
       position: sticky;
     }
+
+.input[type=text] {
+  width: 50%;
+  margin: 30px;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  box-sizing: content-box;
+}
+
+
+input[type=text], select, textarea{
+  color: #ff0099;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  background-color: #ff0099;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #00000;
+  padding: 20px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
